@@ -1,0 +1,111 @@
+######################## default configuration ####################
+baseURL = "https://anamikajanit.github.io"
+title = "AJ Art"
+theme = "twenty-twenty-hugo"
+languageName = "En"
+languageCode = "en-us"
+# post pagination
+paginate = "6"
+# post excerpt
+summaryLength = "10"
+# disqus short name
+#disqusShortname = "" # get your shortname form here : https://disqus.com
+# disable language
+disableLanguages = [] # desable language from here
+# google analytics
+googleAnalytics = "" # example : UA-123-45
+
+
+
+############################## Output ###############################
+[outputs]
+home = ["HTML", "RSS", "JSON"]
+
+# unsafe html
+[markup.goldmark.renderer]
+unsafe = true
+
+[taxonomies]
+category = "categories"
+tag = "tags"
+author = "author"
+
+############################## navigation ###############################
+
+# main menu
+[[menu.main]]
+name = "Home"
+URL = "/"
+weight = 1
+
+[[menu.main]]
+name = "About"
+URL = "about"
+weight = 2
+
+[[menu.main]]
+name = "Exhibits"
+URL = "exhibits"
+weight = 3
+
+
+
+#################### default parameters ################################
+[params]
+# Meta data
+description = "This is meta description"
+author = "Abhinav"
+
+# favicon
+[params.favicon]
+favicon = "images/spotlight01.png"
+
+# cookies
+[params.cookies]
+enable = true
+expire_days = 2
+
+# banner
+[params.banner]
+heading = "\"If I could say it in words, there would be no reason to paint.\" -Edward Hopper"
+image = "images/2020-three-quarters-1.png"
+
+# blog
+[params.blog]
+heading = "The premier destination for modern art in Northern Sweden. Open from 10 AM to 6 PM every day during the summer months."
+
+# call to action
+[params.call_to_action]
+enable = false
+title = "Contact us for more information."
+content = "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis"
+button_label = "Contact Us"
+button_url = "contact"
+
+# gallery
+[params.gallery]
+enable = false
+
+[[params.gallery.gallery_item ]]
+image = "images/banner.jpg"
+
+[[params.gallery.gallery_item ]]
+image = "images/gallery/fulls/01.jpg"
+
+
+# footer
+[params.footer]
+title = "About Us"
+content = "Anamika and Janit art duo brings together original handmade oil and acrylic paintings that will adorn the walls of your home for years to come."
+phone = "+(91)8860934593"
+email = "janit.ani87@gmail.com"
+copyright = "Copyright &copy; 2021 AJ Art"
+
+############################# social site ########################
+[params.social]
+#yelp = "#"
+#facebook = "#"
+#twitter = "#"
+instagram = "https://www.instagram.com/janit_sachdeva"
+email = "janit.ani87@gmail.com"
+#linkedin = "#"
